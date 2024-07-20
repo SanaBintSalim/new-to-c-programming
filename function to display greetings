@@ -1,0 +1,23 @@
+//function to display namaste or bonjour 
+#include<stdio.h>
+void greet(int a);
+
+int main(){
+    int n;
+    printf("\n\nIndian 1\nFrench 2\nEnter your nationality:\t");
+    scanf("%d",&n);
+    greet(n);   // function name only
+    return 0;
+}
+
+void greet(int a){   //parameter here n, is the value that function takes to work on
+    if(a==1){
+    printf("\nNAMASTE\n\n");        
+    }
+    else if(a==2){
+    printf("\nBONJOUR\n\n");    
+    }
+    else{
+    printf("\ninvalid input\n");                  
+    }
+}
