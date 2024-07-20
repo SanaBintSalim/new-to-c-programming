@@ -1,0 +1,20 @@
+//function to find factorial
+#include<stdio.h>
+
+int fact(int x);
+
+int main(){
+    int n;
+    printf("Enter a number\n");
+    scanf("%d",&n);
+    printf("Factorial of %d is %d\n",n,fact(n));
+    return 0;
+}
+
+int fact(int x){ // function definition
+    int i, fact = 1; // do not redefine x (formal parameter) here !!
+    for (i=1; i<=x; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
